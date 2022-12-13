@@ -136,6 +136,16 @@ a:hover{
     .header{
         height: 50px;
     }
+    nav.sider:hover {
+        width: 200px;
+    }
+    nav.sider:hover ~ .data{
+        margin-left: 200px;
+    }
+
+    nav.sider:hover + .header{
+        margin-left: 200px;
+    }
 }
 
 .main{
