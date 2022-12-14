@@ -111,6 +111,9 @@ a:hover{
     top: 12px;
     margin-left: 0;
 }
+.nav_open{
+    display: none;
+}
 
 .data{
     margin-left: 210px;

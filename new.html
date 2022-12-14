@@ -9,14 +9,26 @@
     <title>Side bar with header reponsive</title>
 </head>
 <body>
-    <nav class="sider">
+    <nav class="sider" id="sider">
         <ul>
             <li>
-                <a href="#" class="logo" onclick="cfunction()">
+                <a href="#" class="logo" >
                     <img src="img.jpg">
                     <span class="nav-item">Sidebar</span>
                 </a>
             </li>
+            <!-- <li>
+                <a href="#" class="nav_open" id="nav_open" onclick="ofunction()">
+                    <i class="fas fa-caret-right"></i>
+                    <span class="nav-item">Close bar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav_close" id="nav_close"  onclick="cfunction()">
+                    <i class="fas fa-caret  -left"></i>
+                    <span class="nav-item">Close bar</span>
+                </a>
+            </li> -->
             <li>
                 <a href="#">
                     <i class="fas fa-home"></i>
@@ -62,7 +74,22 @@
         </ul>
 
     </nav>
-    <nav class="header">
+
+    <!-- <script>
+        function cfunction(){
+            document.getElementsById("nav_close").style.cssText = `
+                display: none; `;
+            document.getElementsById("nav_open").style.removeProperty(display);
+            document.getElementsById("nav.sider").style.cssText = `
+                width: 200px; `; 
+            document.getElementsById("data").style.cssText = `
+                margin-left: 200px; `;
+            document.getElementsById("nav.sider").style.cssText = `
+                margin-left: 200px;`;
+        }
+    </script> -->
+
+    <nav class="header" id="header" >
         <ul class="head">
             <li>
                 <a href="#">
@@ -109,7 +136,7 @@
         </ul>
 
     </nav>
-    <div class="data">
+    <div class="data" id="data" >
 
         <div class="main">
             <div class="main_card"> </div>
